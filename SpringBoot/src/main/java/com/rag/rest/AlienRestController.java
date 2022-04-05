@@ -19,20 +19,19 @@ public class AlienRestController {
 	@Autowired
 	AlienRepo2 repo;
 
-	
 	// using rest api
-		@RequestMapping("/alien")
-		//@ResponseBody
-		public String getAlien() {
-			
-			return repo.findAll().toString();
-		}
-		 
+	@RequestMapping("/alien")
+	// @ResponseBody
+	public String getAlien() {
+
+		return repo.findAll().toString();
+	}
+
 	// @RequestMapping("/aliens")
 	@GetMapping("/aliens")
 	// @ResponseBody // we are using @restController
 	public List<Alien> getAliens() {
-system.out.println("in getAliens");//hello
+		System.out.println("in getAliens");// hello
 		return repo.findAll();
 	}
 

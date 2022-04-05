@@ -57,6 +57,7 @@ public class AlienController {
 	}
 	
 	@RequestMapping("/fw2")
+	
 	public ModelAndView home12( ) {
 		Alien	alien = new Alien();
 		alien.setAid(123);
@@ -105,7 +106,7 @@ public class AlienController {
 	@RequestMapping("/getAlienByTech")
 	@ResponseBody
 	public ModelAndView getAlienByTech(@RequestParam String tech) {
-		System.out.println("inside getalienbytec");
+		System.out.println("inside getalienbytec ");
 		ModelAndView mv = new ModelAndView("showAlien"); // List<Alien> alien = repo.findByTech(tech);
 		List<Alien> alien = alienService.findByTechSorted(tech);
 		System.out.println(alien);
