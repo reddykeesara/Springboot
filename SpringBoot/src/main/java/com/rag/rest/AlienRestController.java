@@ -32,7 +32,7 @@ public class AlienRestController {
 	@GetMapping("/aliens")
 	// @ResponseBody // we are using @restController
 	public List<Alien> getAliens() {
-system.out.println("in getAliens");
+system.out.println("in getAliens")
 		return repo.findAll();
 	}
 
