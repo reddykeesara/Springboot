@@ -25,6 +25,7 @@ public class AppExcepHandler {
 	}
 	
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+	
 	@ExceptionHandler(UserNotFoundException.class)
 	public Map<String, String> handleBusinessExcep(UserNotFoundException ex) {
 		Map<String, String> errorMap = new HashMap<>();
