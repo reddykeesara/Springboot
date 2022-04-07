@@ -34,6 +34,15 @@ public class AlienController {
 	@Autowired
 	AlienService alienService;
 
+	@RequestMapping({"/hello"})
+	public String hello() {
+		return "hello world";
+	}
+	
+	@RequestMapping({"/home"})
+	public String home() {
+		return "hello world";
+	}
 	
 	@RequestMapping("/fw")
 	public ModelAndView home11(@RequestParam("name")String myName) {
@@ -72,7 +81,7 @@ public class AlienController {
 
 	@CustomAnnot
 	@RequestMapping("/al")
-	public String home() {
+	public String alienHome() {
 		
 		return "alien";
 	}
