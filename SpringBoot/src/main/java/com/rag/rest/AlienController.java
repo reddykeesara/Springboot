@@ -39,10 +39,10 @@ public class AlienController {
 		return "hello world";
 	}
 	
-	@RequestMapping({"/home"})
-	public String home() {
-		return "hello world";
-	}
+//	@RequestMapping({"/home"})
+//	public String home() {
+//		return "hello world";
+//	}
 	
 	@RequestMapping("/fw")
 	public ModelAndView home11(@RequestParam("name")String myName) {

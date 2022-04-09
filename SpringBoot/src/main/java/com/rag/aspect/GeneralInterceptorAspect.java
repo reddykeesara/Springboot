@@ -19,7 +19,6 @@ import com.rag.model.Alien;
 import com.rag.mq.Employee;
 import com.rag.rest.AlienController;
 
-import lombok.extern.slf4j.Slf4j;
 
 //@Aspect
 //@Slf4j
