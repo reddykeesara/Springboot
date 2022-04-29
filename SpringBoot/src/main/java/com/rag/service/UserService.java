@@ -26,6 +26,7 @@ public class UserService {
 		User user = User.build(0, userRequest.getUserName(), userRequest.getEmail(), userRequest.getMobile(),
 				userRequest.getGender(), userRequest.getAge(), userRequest.getNationality());
 		return repo.save(user);
+		
 	}
 
 	public List<User> getAllUsers() {
